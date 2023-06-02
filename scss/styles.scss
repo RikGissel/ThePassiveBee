@@ -15,14 +15,6 @@ html {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 ul {
   padding: 0;
   margin: 0;
@@ -42,6 +34,7 @@ ul {
 }
 
 .navbar .logo {
+  margin-left: 50px;
   cursor: pointer;
 
   span {
@@ -229,9 +222,15 @@ section {
       display: flex;
       width: 85%;
       height: fit-content;
+
+      .main-wrapper-information {
+        margin: 20px 0;
+        line-height: 1.2em;
+      }
     }
 
     .main-heading {
+      margin-bottom: 25px;
       animation: fadeLeft 3s ease;
 
       @keyframes fadeLeft {
@@ -339,4 +338,13 @@ a {
   }
   
   /* media queries */
-  
+  @media (max-width: 1024px) {
+    .main-wrapper {
+      flex-direction: column;
+      width: 100% !important;
+    }
+
+    .main-section main div {
+      width: 100% !important;
+    }
+  }
