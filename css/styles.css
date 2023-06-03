@@ -229,6 +229,8 @@ section {
 .main-section main .main-wrapper {
   display: flex;
   width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .main-section main .main-wrapper .main-wrapper-information {
@@ -237,7 +239,17 @@ section {
 }
 .main-section main .main-heading {
   margin-bottom: 25px;
-  animation: fadeLeft 3s ease;
+  -webkit-animation: fadeLeft 3s ease;
+          animation: fadeLeft 3s ease;
+}
+@-webkit-keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeLeft {
   from {
@@ -249,7 +261,8 @@ section {
   }
 }
 .main-section main p {
-  animation: fadeLeft 2.5s ease;
+  -webkit-animation: fadeLeft 2.5s ease;
+          animation: fadeLeft 2.5s ease;
 }
 @keyframes fadeLeft {
   from {
@@ -272,7 +285,8 @@ section {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin: 20px 0;
-  animation: fadeLeft 2s ease;
+  -webkit-animation: fadeLeft 2s ease;
+          animation: fadeLeft 2s ease;
 }
 @keyframes fadeLeft {
   from {
@@ -294,10 +308,20 @@ section {
   max-width: 100%;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 66% 100%, 11% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 66% 100%, 11% 75%, 0% 25%);
-  animation: fadeRight 2s ease;
+  -webkit-animation: fadeRight 2s ease;
+          animation: fadeRight 2s ease;
 }
 .main-section main .video-thumbnail img {
   max-width: 100%;
+}
+@-webkit-keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeRight {
   from {
