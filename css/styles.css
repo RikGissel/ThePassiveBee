@@ -117,7 +117,7 @@ button:hover {
 }
 
 section {
-  background: #000;
+  background: rgb(0, 0, 0);
   color: #fff;
   padding: 20px;
   font-weight: bold;
