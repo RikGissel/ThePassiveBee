@@ -78,6 +78,7 @@ body {
 .scroll {
   background-color: #ffffff;
   box-shadow: rgba(71, 149, 226, 0.1) 0px 4px 4px, rgba(70, 156, 243, 0.1) 0px 4px 16px;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -187,16 +188,14 @@ li {
     min-width: 15em;
     padding: 2em;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    -webkit-clip-path: circle(0% at 100% 0);
-            clip-path: circle(0% at 100% 0);
+    clip-path: circle(0% at 100% 0);
     transition: all 500ms ease-in-out;
   }
   nav ul {
     flex-direction: column;
   }
   nav.show {
-    -webkit-clip-path: circle(200% at 100% 0);
-            clip-path: circle(200% at 100% 0);
+    clip-path: circle(200% at 100% 0);
     transition-duration: 300ms;
   }
   .menu-titel {
@@ -265,7 +264,6 @@ h5 {
 
 p {
   font-family: "inter";
-  padding: 23px 0 39px 0;
   font-size: 18px;
 }
 
@@ -349,6 +347,15 @@ p {
   color: #fff;
 }
 
+.footer-bg-image {
+  background-size: cover;
+  background-image: url(../../assets/baggrund/footer.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  width: 100%;
+}
+
 .Journey-wrapper {
   text-align: center;
   padding: 60px 0;
@@ -407,8 +414,7 @@ p {
   width: 275px;
 }
 .item-wrapper .Featured-item img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .footer-img {
