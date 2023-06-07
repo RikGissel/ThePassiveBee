@@ -50,6 +50,7 @@ h5{
 }
 p {
 	font-family: $font;
+	padding: 23px 0 39px 0;
 	font-size: 18px;
 }
 @media only screen and (max-width: 600px) {
@@ -135,15 +136,6 @@ padding-top: 60px;
 	p{
 	color:$secondary-color;
 	}
-}
-
-.footer-bg-image {
-	background-size: cover;
-	background-image: url(../../assets/baggrund/footer.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	min-height: 600px;
-	width: 100%;
 }
 
 .Journey-wrapper{
