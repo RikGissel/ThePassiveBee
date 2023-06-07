@@ -1,0 +1,49 @@
+.btn {
+	font-family: $font;
+	font-weight: bold;
+	margin: 10px;
+	background-color: #0056D6;
+	color: $secondary-color;
+	width: 140px;
+	font-size: 16px;
+	height: 43px;
+	border-radius: 27px;
+	border: none;
+	cursor: pointer;
+	&:hover{
+		background-color: #356bf5;
+
+	}
+	a {
+		color: $secondary-color;
+		font-weight: bold;
+		font-size: 16px;
+		&:hover{
+			color: $secondary-color;
+			text-decoration: none;
+		}
+	}
+}
+.btn-2 {
+	margin: 10px;
+	font-family: $font;
+	font-weight: bold;
+	background-color: #f6f6f400;
+	color: $primary-color;
+	width: 140px;
+	font-size: 16px;
+	height: 43px;
+	border-radius: 27px;
+	border: solid 1px $primary-color;
+	cursor: pointer;
+	&:hover{
+		background-color: #356bf5;
+		color: white;
+
+	}
+	a {
+		color: $secondary-color;
+		font-weight: bold;
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,11 @@
+// Style der skal ramme globalt på dokumenterne
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: #F6F6F4;
+    font-family: "inter";
+}
