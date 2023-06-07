@@ -78,7 +78,6 @@ body {
 
 .scroll {
   background-color: #ffffff;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -188,14 +187,16 @@ li {
     min-width: 15em;
     padding: 2em;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    clip-path: circle(0% at 100% 0);
+    -webkit-clip-path: circle(0% at 100% 0);
+            clip-path: circle(0% at 100% 0);
     transition: all 500ms ease-in-out;
   }
   nav ul {
     flex-direction: column;
   }
   nav.show {
-    clip-path: circle(200% at 100% 0);
+    -webkit-clip-path: circle(200% at 100% 0);
+            clip-path: circle(200% at 100% 0);
     transition-duration: 300ms;
   }
   .menu-titel {
@@ -264,7 +265,6 @@ h5 {
 
 p {
   font-family: "inter";
-  padding: 15px 0 39px 0;
   font-size: 18px;
 }
 
@@ -325,7 +325,8 @@ p {
   width: 275px;
 }
 .item-wrapper .Featured-item img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .wrapper {
